@@ -1,0 +1,42 @@
+import  java.util.Scanner ;
+class  EstCiclicas {
+   Escáner estático sc =  nuevo  escáner ( System . in);
+static  void  suma20mumerosParesWhile () {
+  // Declarar variables e inicializacion de valores
+  int numInit = 1 , sumaNumPar = 0 ;
+  // Proceso
+    while (numInit <=  20 ) {
+      if (numInit % 2 == 0 ) {
+        sumaNumPar = sumaNumPar + numInit;
+      }
+      numInit ++ ; // numInit = numInit + 1;
+    }
+  // Datos de Salida
+    Sistema . fuera . println ( " La suma de números pares entre 1 y 20 es: " + sumaNumPar);
+}
+
+static  void  suma20numerosParesDowhile () {
+  // Declaracion de variables e inicializacion de variables
+  int sumaNumPar = 0 , numInit = 1 ;
+  // Proceso
+  hacer {
+    if (numInit % 2 == 0 ) {
+      sumaNumPar = sumaNumPar + numInit;
+    }
+    numInit ++ ;
+  } while (numInit <= 20 );
+  // Datos de salida
+  Sistema . fuera . println ( " La suma de números pares entre 1 y 20 es: " + sumaNumPar);
+}
+
+static  void  suma20mumerosParesFor () {
+  // Declarar variables e inicializacion de valores
+  int sumaNumPar = 0 ;
+@@ -42,6 +56,7 @@ static void menuOpciones () {
+        cambiar (opcionesA) {
+          caso  1 : suma20mumerosParesWhile (); romper ;
+          caso  2 : suma20mumerosParesFor (); romper ;
+          caso  3 : suma20numerosParesDowhile (); romper ;
+          por defecto :
+            Sistema . fuera . println ( " El Algoritmo no existe! " );
+        }   
